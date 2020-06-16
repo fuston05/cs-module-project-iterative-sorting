@@ -28,14 +28,30 @@ def selection_sort(arr):
 
 #      0  1  2  3  4  5  6  7  8  9
 arr = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
-print(selection_sort(arr))
+# print(selection_sort(arr))
 
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
-    # Your code here
+    # return empty arr if input is empty
+    if len(arr) < 1:
+        return []
+    # make 'i' an int
+    end_index= len(arr)-1
+    while end_index > 0:
+        for i in range(0, end_index):
+            cur_index= i
+            next_index= i+1
+            if arr[cur_index] > arr[next_index]:
+                swap= arr[cur_index]
+                arr[cur_index]= arr[next_index]
+                arr[next_index]= swap
+        end_index-= 1
+        
 
     return arr
+
+print(bubble_sort(arr))
 
 
 '''
