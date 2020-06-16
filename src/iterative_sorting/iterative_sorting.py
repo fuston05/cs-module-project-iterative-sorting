@@ -27,7 +27,7 @@ def selection_sort(arr):
     return arr
 
 #      0  1  2  3  4  5  6  7  8  9
-arr = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
+# arr = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
 # print(selection_sort(arr))
 
 
@@ -51,7 +51,7 @@ def bubble_sort(arr):
 
     return arr
 
-print(bubble_sort(arr))
+# print(bubble_sort(arr))
 
 
 '''
